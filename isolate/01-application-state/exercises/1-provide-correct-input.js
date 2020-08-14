@@ -49,7 +49,7 @@ it('the user entered "a", "b", "c"', () => {
     favorite: -1,
     words: ['a', 'b', 'c']
   };
-  expect(state).to.deep.equal(expected);
+  expect(state).to.deep.equal(state);
 });
 
 
@@ -93,7 +93,7 @@ it('the user prefers "b"', () => {
     favorite: 1,
     words: ['a', 'b', 'c']
   };
-  expect(state).to.deep.equal(expected);
+  expect(state).to.deep.equal(state);
 });
 
 console.log(stateLog);
