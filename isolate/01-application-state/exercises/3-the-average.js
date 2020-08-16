@@ -59,7 +59,7 @@ while (true) {
   //  it will be updated by reference!
   stateLog.push(inputLog);
 
-  if (nextInput == null || nextInput == false) {
+  if (nextInput == null || nextInput == '') {
     // nothing more to log
     // exit the for loop, no more user input to collect
     break;
