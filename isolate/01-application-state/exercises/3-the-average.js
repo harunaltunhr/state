@@ -1,5 +1,6 @@
 'use strict';
-
+const ol = 'a';
+ol.start
 /* The Average
 
   this program accepts numbers from the user

@@ -9,7 +9,12 @@ const expect = chai.expect;
  * @returns {HTMLParagraphElement} a rendered paragraph element
  */
 const renderParagraph = (text, classList = []) => {
-
+const paragraphEl = document.createElement('p');
+paragraphEl.innerHTML = text;
+for(const item of classList){
+paragraphEl.className += `${item} `
+}
+return paragraphEl
 };
 
 describe('renderParagraph: renders a paragraph with optional styling', () => {
