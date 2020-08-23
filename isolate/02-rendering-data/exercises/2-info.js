@@ -17,9 +17,11 @@ const renderInfo = (caption, mainText, id = '') => {
   summaryEl.innerHTML= caption;
   detailsEl.appendChild(summaryEl);
 
+
   const textEl = document.createElement('text');
   textEl.innerHTML= mainText;
   detailsEl.appendChild(textEl);
+
 
   return detailsEl;
 };
@@ -56,8 +58,8 @@ describe('renderInfo: renders some info under a caption', () => {
 
     describe(`.children[1]`, () => {
       const actualChild = actual.children[1];
-      it('has tagName: "TEXT"', () => {
-        expect(actualChild).to.have.property('tagName', 'TEXT');
+      it('has tagName: "P"', () => {
+        expect(actualChild).to.have.property('tagName', 'P');
       });
       it('has text: "red, orange, green, blue."', () => {
         expect(actualChild).to.have.text('red, orange, green, blue.');
@@ -99,8 +101,8 @@ describe('renderInfo: renders some info under a caption', () => {
 
     describe(`.children[1]`, () => {
       const actualChild = actual.children[1];
-      it('has tagName: "TEXT"', () => {
-        expect(actualChild).to.have.property('tagName', 'TEXT');
+      it('has tagName: "P"', () => {
+        expect(actualChild).to.have.property('tagName', 'P');
       });
       it('has text: "red, orange, green, blue."', () => {
         expect(actualChild).to.have.text('red, orange, green, blue.');
@@ -142,8 +144,8 @@ describe('renderInfo: renders some info under a caption', () => {
 
     describe(`.children[1]`, () => {
       const actualChild = actual.children[1];
-      it('has tagName: "TEXT"', () => {
-        expect(actualChild).to.have.property('tagName', 'TEXT');
+      it('has tagName: "P"', () => {
+        expect(actualChild).to.have.property('tagName', 'P');
       });
       it('has text: "a programming language!"', () => {
         expect(actualChild).to.have.text('a programming language!');
