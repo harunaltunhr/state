@@ -12,7 +12,7 @@ const renderParagraph = (text, classList = []) => {
 const paragraphEl = document.createElement('p');
 paragraphEl.innerHTML = text;
 for(const item of classList){
-paragraphEl.className += `${item} `
+paragraphEl.classList.add(item)
 }
 return paragraphEl
 };
